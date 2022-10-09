@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="TUGAS 2" href="Tugas%202.html" />
+    <link rel="next" title="TUGAS 2 - Diskritisasi" href="Tugas%202.html" />
     <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -123,17 +123,17 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%202.html">
-   TUGAS 2
+   TUGAS 2 - Diskritisasi
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%203.html">
-   TUGAS 3
+   TUGAS 3 - K-NN
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%204.html">
-   TUGAS 4
+   TUGAS 4 - K-Means
   </a>
  </li>
 </ul>
@@ -361,31 +361,29 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#a-statistik-deskriptif">
-   A. STATISTIK DESKRIPTIF
+  <a class="reference internal nav-link" href="#pengertian">
+   Pengertian
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#membaca-data-dari-url">
+   1. Membaca data dari url
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#membuat-statistik-diskriptif-dari-data-setiap-atribut-yang-bertipe-numerik-dengan-menghitung-mean-median-modus-dan-kemiringan">
+   2. Membuat statistik diskriptif dari data (setiap atribut yang bertipe numerik) dengan menghitung mean, median, modus dan kemiringan
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mendiskripsikan-kemiringan-skewned-dari-setiap-variabel-bertipe-numerik">
+   3. Mendiskripsikan kemiringan/skewned dari setiap variabel (bertipe numerik)
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#membaca-data-dari-url">
-     1. Membaca data dari url
+    <a class="reference internal nav-link" href="#menampilkan-graph-kemiringan-data-dari-value">
+     Menampilkan graph kemiringan data dari value
     </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#membuat-statistik-diskriptif-dari-data-setiap-atribut-yang-bertipe-numerik-dengan-menghitung-mean-median-modus-dan-kemiringan">
-     2. Membuat statistik diskriptif dari data (setiap atribut yang bertipe numerik) dengan menghitung mean, median, modus dan kemiringan
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#mendiskripsikan-kemiringan-skewned-dari-setiap-variabel-bertipe-numerik">
-     3. Mendiskripsikan kemiringan/skewned dari setiap variabel (bertipe numerik)
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menampilkan-graph-kemiringan-data-dari-value">
-       Menampilkan graph kemiringan data dari value
-      </a>
-     </li>
-    </ul>
    </li>
   </ul>
  </li>
@@ -409,31 +407,29 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#a-statistik-deskriptif">
-   A. STATISTIK DESKRIPTIF
+  <a class="reference internal nav-link" href="#pengertian">
+   Pengertian
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#membaca-data-dari-url">
+   1. Membaca data dari url
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#membuat-statistik-diskriptif-dari-data-setiap-atribut-yang-bertipe-numerik-dengan-menghitung-mean-median-modus-dan-kemiringan">
+   2. Membuat statistik diskriptif dari data (setiap atribut yang bertipe numerik) dengan menghitung mean, median, modus dan kemiringan
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mendiskripsikan-kemiringan-skewned-dari-setiap-variabel-bertipe-numerik">
+   3. Mendiskripsikan kemiringan/skewned dari setiap variabel (bertipe numerik)
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#membaca-data-dari-url">
-     1. Membaca data dari url
+    <a class="reference internal nav-link" href="#menampilkan-graph-kemiringan-data-dari-value">
+     Menampilkan graph kemiringan data dari value
     </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#membuat-statistik-diskriptif-dari-data-setiap-atribut-yang-bertipe-numerik-dengan-menghitung-mean-median-modus-dan-kemiringan">
-     2. Membuat statistik diskriptif dari data (setiap atribut yang bertipe numerik) dengan menghitung mean, median, modus dan kemiringan
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#mendiskripsikan-kemiringan-skewned-dari-setiap-variabel-bertipe-numerik">
-     3. Mendiskripsikan kemiringan/skewned dari setiap variabel (bertipe numerik)
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#menampilkan-graph-kemiringan-data-dari-value">
-       Menampilkan graph kemiringan data dari value
-      </a>
-     </li>
-    </ul>
    </li>
   </ul>
  </li>
@@ -454,13 +450,14 @@ title="Print to PDF"
 <li><p>Membuat statistik diskriptif dari data (setiap atribut yang bertipe numerik)</p></li>
 <li><p>Mendiskripsikan kemiringan/skewned dari setiap variabel (bertipe numerik)</p></li>
 </ol>
-<section id="a-statistik-deskriptif">
-<h2>A. STATISTIK DESKRIPTIF<a class="headerlink" href="#a-statistik-deskriptif" title="Permalink to this headline">#</a></h2>
+<section id="pengertian">
+<h2>Pengertian<a class="headerlink" href="#pengertian" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><p><em>Statik deskriptif adalah metode yang berkaitan dengan pengumpulan / penyajian data hingga memberi informasi yang berguna.</em></p>
 </div></blockquote>
+</section>
 <section id="membaca-data-dari-url">
-<h3>1. Membaca data dari url<a class="headerlink" href="#membaca-data-dari-url" title="Permalink to this headline">#</a></h3>
+<h2>1. Membaca data dari url<a class="headerlink" href="#membaca-data-dari-url" title="Permalink to this headline">#</a></h2>
 <p>Import library pandas untuk mengatur tata letak data sehingga mudah dicari secara intuitif</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -480,7 +477,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-d25a6625-41a2-4410-98f5-87095c7de7f3">
+  <div id="df-bc39ebdd-3d96-4505-8446-053a2a90ed43">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -539,7 +536,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-d25a6625-41a2-4410-98f5-87095c7de7f3')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-bc39ebdd-3d96-4505-8446-053a2a90ed43')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -590,12 +587,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-d25a6625-41a2-4410-98f5-87095c7de7f3 button.colab-df-convert');
+          document.querySelector('#df-bc39ebdd-3d96-4505-8446-053a2a90ed43 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-d25a6625-41a2-4410-98f5-87095c7de7f3');
+          const element = document.querySelector('#df-bc39ebdd-3d96-4505-8446-053a2a90ed43');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -665,7 +662,7 @@ Name: value, Length: 100, dtype: int64
 </div>
 </section>
 <section id="membuat-statistik-diskriptif-dari-data-setiap-atribut-yang-bertipe-numerik-dengan-menghitung-mean-median-modus-dan-kemiringan">
-<h3>2. Membuat statistik diskriptif dari data (setiap atribut yang bertipe numerik) dengan menghitung mean, median, modus dan kemiringan<a class="headerlink" href="#membuat-statistik-diskriptif-dari-data-setiap-atribut-yang-bertipe-numerik-dengan-menghitung-mean-median-modus-dan-kemiringan" title="Permalink to this headline">#</a></h3>
+<h2>2. Membuat statistik diskriptif dari data (setiap atribut yang bertipe numerik) dengan menghitung mean, median, modus dan kemiringan<a class="headerlink" href="#membuat-statistik-diskriptif-dari-data-setiap-atribut-yang-bertipe-numerik-dengan-menghitung-mean-median-modus-dan-kemiringan" title="Permalink to this headline">#</a></h2>
 <p>Import library statistics untuk melakukan operasi statistika</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -891,7 +888,7 @@ Name: value, Length: 100, dtype: int64
 </div>
 </section>
 <section id="mendiskripsikan-kemiringan-skewned-dari-setiap-variabel-bertipe-numerik">
-<h3>3. Mendiskripsikan kemiringan/skewned dari setiap variabel (bertipe numerik)<a class="headerlink" href="#mendiskripsikan-kemiringan-skewned-dari-setiap-variabel-bertipe-numerik" title="Permalink to this headline">#</a></h3>
+<h2>3. Mendiskripsikan kemiringan/skewned dari setiap variabel (bertipe numerik)<a class="headerlink" href="#mendiskripsikan-kemiringan-skewned-dari-setiap-variabel-bertipe-numerik" title="Permalink to this headline">#</a></h2>
 <p>Kemencengan atau kecondongan (skewness) adalah tingkat ketidaksimetrisan atau kejauhan simetri dari sebuah distribusi. Skewness diartikan sebagai kemiringan distribusi data. Sebuah distribusi yang tidak simetris akan memiliki rata-rata, median, dan modus yang tidak sama besarnya sehingga distribusi akan terkonsentrasi pada salah satu sisi dan kurvanya akan menceng.</p>
 <p>Menghitung kemiringan</p>
 <div class="cell docutils container">
@@ -907,7 +904,7 @@ Name: value, Length: 100, dtype: int64
 </div>
 </div>
 <section id="menampilkan-graph-kemiringan-data-dari-value">
-<h4>Menampilkan graph kemiringan data dari value<a class="headerlink" href="#menampilkan-graph-kemiringan-data-dari-value" title="Permalink to this headline">#</a></h4>
+<h3>Menampilkan graph kemiringan data dari value<a class="headerlink" href="#menampilkan-graph-kemiringan-data-dari-value" title="Permalink to this headline">#</a></h3>
 <p>import library seaborn untuk visualisasi di matplotlib</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -932,10 +929,9 @@ Name: value, Length: 100, dtype: int64
   warnings.warn(msg, FutureWarning)
 </pre></div>
 </div>
-<img alt="_build/jupyter_execute/Tugas 1_32_1.png" src="_build/jupyter_execute/Tugas 1_32_1.png" />
+<img alt="_images/Tugas 1_32_1.png" src="_images/Tugas 1_32_1.png" />
 </div>
 </div>
-</section>
 </section>
 </section>
 </section>
@@ -977,7 +973,7 @@ Name: value, Length: 100, dtype: int64
     <a class='right-next' id="next-link" href="Tugas%202.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">TUGAS 2</p>
+        <p class="prev-next-title">TUGAS 2 - Diskritisasi</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

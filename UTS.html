@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="TUGAS 5 - Normalisasi" href="Tugas%205.html" />
+    <link rel="next" title="TUGAS 5 - Naive Bayes Classifier" href="Tugas%205.html" />
     <link rel="prev" title="TUGAS 4 - K-Means" href="Tugas%204.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -141,7 +141,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%205.html">
-   TUGAS 5 - Normalisasi
+   TUGAS 5 - Naive Bayes Classifier
   </a>
  </li>
 </ul>
@@ -440,7 +440,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-802b5bb2-4b26-4eeb-bc58-9865a338f687">
+  <div id="df-5067c2aa-3282-4925-8c96-41a982a8a372">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -541,7 +541,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-802b5bb2-4b26-4eeb-bc58-9865a338f687')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-5067c2aa-3282-4925-8c96-41a982a8a372')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -592,12 +592,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-802b5bb2-4b26-4eeb-bc58-9865a338f687 button.colab-df-convert');
+          document.querySelector('#df-5067c2aa-3282-4925-8c96-41a982a8a372 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-802b5bb2-4b26-4eeb-bc58-9865a338f687');
+          const element = document.querySelector('#df-5067c2aa-3282-4925-8c96-41a982a8a372');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -657,7 +657,7 @@ memory usage: 9.2 KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-2d05a47f-beda-4512-9782-821db5cdf34a">
+  <div id="df-cfb1811d-e237-4b6f-88c0-717a9b9aa01f">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -752,7 +752,7 @@ memory usage: 9.2 KB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2d05a47f-beda-4512-9782-821db5cdf34a')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-cfb1811d-e237-4b6f-88c0-717a9b9aa01f')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -803,12 +803,12 @@ memory usage: 9.2 KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-2d05a47f-beda-4512-9782-821db5cdf34a button.colab-df-convert');
+          document.querySelector('#df-cfb1811d-e237-4b6f-88c0-717a9b9aa01f button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2d05a47f-beda-4512-9782-821db5cdf34a');
+          const element = document.querySelector('#df-cfb1811d-e237-4b6f-88c0-717a9b9aa01f');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -916,8 +916,8 @@ Name: Classification, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([2, 2, 1, 2, 1, 1, 2, 2, 1, 2, 2, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 2,
-       1, 2])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 2, 1, 1, 2, 2, 2, 2, 1, 1, 1, 2, 2,
+       2, 2])
 </pre></div>
 </div>
 </div>
@@ -930,30 +930,30 @@ Name: Classification, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.25, 0.75],
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.75, 0.25],
        [0.25, 0.75],
+       [0.5 , 0.5 ],
        [0.75, 0.25],
        [0.25, 0.75],
+       [0.5 , 0.5 ],
        [1.  , 0.  ],
        [0.75, 0.25],
        [0.25, 0.75],
+       [0.5 , 0.5 ],
        [0.25, 0.75],
        [0.75, 0.25],
+       [0.75, 0.25],
+       [0.  , 1.  ],
+       [0.  , 1.  ],
        [0.25, 0.75],
        [0.25, 0.75],
        [1.  , 0.  ],
+       [0.75, 0.25],
        [0.5 , 0.5 ],
-       [0.5 , 0.5 ],
-       [0.75, 0.25],
-       [0.75, 0.25],
-       [0.75, 0.25],
        [0.  , 1.  ],
        [0.  , 1.  ],
-       [0.25, 0.75],
-       [0.75, 0.25],
        [0.  , 1.  ],
-       [0.75, 0.25],
-       [0.25, 0.75]])
+       [0.  , 1.  ]])
 </pre></div>
 </div>
 </div>
@@ -974,8 +974,8 @@ Name: Classification, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[7 3]
- [5 9]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 9  1]
+ [ 3 11]]
 </pre></div>
 </div>
 </div>
@@ -988,8 +988,8 @@ Name: Classification, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Score data train  : 0.782608695652174
-Score data test   : 0.6666666666666666
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Score data train  : 0.8260869565217391
+Score data test   : 0.8333333333333334
 </pre></div>
 </div>
 </div>
@@ -1005,12 +1005,12 @@ Score data test   : 0.6666666666666666
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              precision    recall  f1-score   support
 
-           1       0.58      0.70      0.64        10
-           2       0.75      0.64      0.69        14
+           1       0.75      0.90      0.82        10
+           2       0.92      0.79      0.85        14
 
-    accuracy                           0.67        24
-   macro avg       0.67      0.67      0.66        24
-weighted avg       0.68      0.67      0.67        24
+    accuracy                           0.83        24
+   macro avg       0.83      0.84      0.83        24
+weighted avg       0.85      0.83      0.83        24
 </pre></div>
 </div>
 </div>
@@ -1055,7 +1055,7 @@ weighted avg       0.68      0.67      0.67        24
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Score data train : 1.0
-Score data test  : 0.75
+Score data test  : 0.8333333333333334
 </pre></div>
 </div>
 </div>
@@ -1101,7 +1101,7 @@ Score data test  : 0.75
     <a class='right-next' id="next-link" href="Tugas%205.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">TUGAS 5 - Normalisasi</p>
+        <p class="prev-next-title">TUGAS 5 - Naive Bayes Classifier</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

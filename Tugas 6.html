@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>&lt;no title&gt; &#8212; Uswatun Chasanah 200411100100</title>
+    <title>TUGAS 6 - Dacision Tree &#8212; Uswatun Chasanah 200411100100</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -112,7 +112,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%201.html">
    TUGAS 1 - Statistik Deskriptif
@@ -141,6 +141,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="Tugas%205.html">
    TUGAS 5 - Naive Bayes Classifier
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   TUGAS 6 - Dacision Tree
   </a>
  </li>
 </ul>
@@ -345,50 +350,23 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1><no title></h1>
+                <h1>TUGAS 6 - Dacision Tree</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -396,7 +374,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="cell docutils container">
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-6-dacision-tree">
+<h1>TUGAS 6 - Dacision Tree<a class="headerlink" href="#tugas-6-dacision-tree" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">warnings</span>
@@ -415,7 +395,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-e88f1f29-daba-4272-97ed-6a95256f0401">
+  <div id="df-8a7c9ffb-69ff-4df7-8434-98870a6a84aa">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -535,7 +515,7 @@ title="Print to PDF"
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e88f1f29-daba-4272-97ed-6a95256f0401')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-8a7c9ffb-69ff-4df7-8434-98870a6a84aa')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -586,12 +566,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e88f1f29-daba-4272-97ed-6a95256f0401 button.colab-df-convert');
+          document.querySelector('#df-8a7c9ffb-69ff-4df7-8434-98870a6a84aa button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e88f1f29-daba-4272-97ed-6a95256f0401');
+          const element = document.querySelector('#df-8a7c9ffb-69ff-4df7-8434-98870a6a84aa');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -654,7 +634,7 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Tugas 6_5_0.svg" src="_images/Tugas 6_5_0.svg" /></div>
+<img alt="_images/Tugas 6_6_0.svg" src="_images/Tugas 6_6_0.svg" /></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -684,7 +664,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-beb64140-7114-4443-aa47-4569806b32e5">
+  <div id="df-51b4a029-812d-4f62-98b3-f28306eb9dfc">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -862,7 +842,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-beb64140-7114-4443-aa47-4569806b32e5')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-51b4a029-812d-4f62-98b3-f28306eb9dfc')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -913,12 +893,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-beb64140-7114-4443-aa47-4569806b32e5 button.colab-df-convert');
+          document.querySelector('#df-51b4a029-812d-4f62-98b3-f28306eb9dfc button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-beb64140-7114-4443-aa47-4569806b32e5');
+          const element = document.querySelector('#df-51b4a029-812d-4f62-98b3-f28306eb9dfc');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -961,6 +941,7 @@ dari data prediksi 29 / 30 * 100% = 96.67%
 </div>
 </div>
 </div>
+</section>
 
     <script type="text/x-thebe-config">
     {

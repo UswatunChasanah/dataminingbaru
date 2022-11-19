@@ -144,6 +144,11 @@ const thebe_selector_output = ".output, .cell_output"
    TUGAS 5 - Naive Bayes Classifier
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Tugas%206.html">
+   TUGAS 6 - Dacision Tree
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -440,7 +445,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-7cf3dd52-5af9-41af-8deb-9dbf7d1ec969">
+  <div id="df-355080ff-8863-4ea1-bc33-9df234b8bd22">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -541,7 +546,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-7cf3dd52-5af9-41af-8deb-9dbf7d1ec969')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-355080ff-8863-4ea1-bc33-9df234b8bd22')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -592,12 +597,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-7cf3dd52-5af9-41af-8deb-9dbf7d1ec969 button.colab-df-convert');
+          document.querySelector('#df-355080ff-8863-4ea1-bc33-9df234b8bd22 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-7cf3dd52-5af9-41af-8deb-9dbf7d1ec969');
+          const element = document.querySelector('#df-355080ff-8863-4ea1-bc33-9df234b8bd22');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -657,7 +662,7 @@ memory usage: 9.2 KB
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0d3aa29a-469e-42d4-a71b-d9044e88e64b">
+  <div id="df-c24a7241-0c25-44d0-abc9-3aacf22694e1">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -752,7 +757,7 @@ memory usage: 9.2 KB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-0d3aa29a-469e-42d4-a71b-d9044e88e64b')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-c24a7241-0c25-44d0-abc9-3aacf22694e1')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -803,12 +808,12 @@ memory usage: 9.2 KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-0d3aa29a-469e-42d4-a71b-d9044e88e64b button.colab-df-convert');
+          document.querySelector('#df-c24a7241-0c25-44d0-abc9-3aacf22694e1 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-0d3aa29a-469e-42d4-a71b-d9044e88e64b');
+          const element = document.querySelector('#df-c24a7241-0c25-44d0-abc9-3aacf22694e1');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -916,8 +921,8 @@ Name: Classification, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 2, 1, 2, 2, 1,
-       1, 1])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1, 2, 1, 2, 2, 2, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 2, 2, 2, 1,
+       1, 2])
 </pre></div>
 </div>
 </div>
@@ -930,30 +935,30 @@ Name: Classification, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.25, 0.75],
-       [0.25, 0.75],
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.75, 0.25],
        [0.  , 1.  ],
        [0.5 , 0.5 ],
-       [0.5 , 0.5 ],
-       [0.5 , 0.5 ],
-       [0.5 , 0.5 ],
-       [0.75, 0.25],
-       [0.5 , 0.5 ],
-       [0.75, 0.25],
        [0.25, 0.75],
        [0.25, 0.75],
-       [0.5 , 0.5 ],
-       [0.5 , 0.5 ],
-       [0.75, 0.25],
-       [0.5 , 0.5 ],
+       [0.25, 0.75],
        [1.  , 0.  ],
-       [0.25, 0.75],
+       [0.  , 1.  ],
+       [0.75, 0.25],
+       [0.75, 0.25],
        [0.5 , 0.5 ],
-       [0.25, 0.75],
+       [0.75, 0.25],
+       [0.5 , 0.5 ],
+       [0.  , 1.  ],
+       [1.  , 0.  ],
+       [0.75, 0.25],
        [0.  , 1.  ],
        [0.5 , 0.5 ],
+       [0.  , 1.  ],
+       [0.  , 1.  ],
+       [0.25, 0.75],
+       [1.  , 0.  ],
        [0.5 , 0.5 ],
-       [0.5 , 0.5 ]])
+       [0.25, 0.75]])
 </pre></div>
 </div>
 </div>
@@ -974,8 +979,8 @@ Name: Classification, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[10  0]
- [ 6  8]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[7 3]
+ [6 8]]
 </pre></div>
 </div>
 </div>
@@ -988,8 +993,8 @@ Name: Classification, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Score data train  : 0.8152173913043478
-Score data test   : 0.75
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Score data train  : 0.8369565217391305
+Score data test   : 0.625
 </pre></div>
 </div>
 </div>
@@ -1005,12 +1010,12 @@ Score data test   : 0.75
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              precision    recall  f1-score   support
 
-           1       0.62      1.00      0.77        10
-           2       1.00      0.57      0.73        14
+           1       0.54      0.70      0.61        10
+           2       0.73      0.57      0.64        14
 
-    accuracy                           0.75        24
-   macro avg       0.81      0.79      0.75        24
-weighted avg       0.84      0.75      0.74        24
+    accuracy                           0.62        24
+   macro avg       0.63      0.64      0.62        24
+weighted avg       0.65      0.62      0.63        24
 </pre></div>
 </div>
 </div>
@@ -1055,7 +1060,7 @@ weighted avg       0.84      0.75      0.74        24
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Score data train : 1.0
-Score data test  : 0.75
+Score data test  : 0.4583333333333333
 </pre></div>
 </div>
 </div>
